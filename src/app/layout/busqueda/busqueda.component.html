@@ -1,0 +1,148 @@
+<div [@routerTransition]>
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            Búsqueda de expedientes
+        </div>
+        <div class="card-body">
+            <form role="form">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group row">
+                            <label for="inputNumExp" class="col-sm-3 col-form-label">Número de expediente</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputNumExp" placeholder="Número de expediente" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputInteresado" class="col-sm-3 col-form-label">Interesado</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputInteresado" placeholder="Interesado" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Fecha de solicitud</label>
+                            <div class="col-sm-9">
+                                <app-date-picker></app-date-picker>
+                                <app-date-picker></app-date-picker>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Cerrados</label>
+                            <div class="col-sm-9"><input type="checkbox" /></div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Procedimiento</label>
+                            <div class="col-sm-9">
+                                <select class="form-control">
+                                    <option>SOSUBV-Solicitud de subvención</option>
+                                    <option>INGENO-Instancia General Normalizada</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Convocatoria</label>
+                            <div class="col-sm-9">
+                                <select class="form-control">
+                                    <option>2019 - Cultura</option>
+                                    <option>2019 - Equipamiento municipal</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Fase</label>
+                            <div class="col-sm-9">
+                                <select class="form-control">
+                                    <option>Comprobación de la solicitud</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Buscar</button>
+                <button type="reset" class="btn btn-info">Reset</button>
+            </form>
+        </div>
+    </div>
+
+    <hr />
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card mb-3">
+                <div class="card-header bg-primary text-white">
+                    Expedientes
+                </div>
+                <div class="card-body table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Num. Expediente</th>
+                                <th>Titular</th>
+                                <th>NIF/CIF</th>
+                                <th>Fecha solicitud</th>
+                                <th>Fase</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><input type="checkbox" /></th>
+                                <td>2019.3565</td>
+                                <td>Ayuntamiento de Abadía</td>
+                                <td>P1000000H</td>
+                                <td>25/03/2019</td>
+                                <td>Comprobación de la solicitud</td>
+                                <th>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" /></th>
+                                <td>2019.3565</td>
+                                <td>Ayuntamiento de Abadía</td>
+                                <td>P1000000H</td>
+                                <td>25/03/2019</td>
+                                <td>Comprobación de la solicitud</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" /></th>
+                                <td>2019.3565</td>
+                                <td>Ayuntamiento de Abadía</td>
+                                <td>P1000000H</td>
+                                <td>25/03/2019</td>
+                                <td>Comprobación de la solicitud</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" /></th>
+                                <td>2019.3565</td>
+                                <td>Ayuntamiento de Abadía</td>
+                                <td>P1000000H</td>
+                                <td>25/03/2019</td>
+                                <td>Comprobación de la solicitud</td>
+                                <th>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" /></th>
+                                <td>2019.3565</td>
+                                <td>Ayuntamiento de Abadía</td>
+                                <td>P1000000H</td>
+                                <td>25/03/2019</td>
+                                <td>Comprobación de la solicitud</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" /></th>
+                                <td>2019.3565</td>
+                                <td>Ayuntamiento de Abadía</td>
+                                <td>P1000000H</td>
+                                <td>25/03/2019</td>
+                                <td>Comprobación de la solicitud</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

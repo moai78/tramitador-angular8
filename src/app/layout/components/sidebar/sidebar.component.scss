@@ -1,4 +1,9 @@
-$topnav-background-color: #222;
+@import "../../../app.component.scss";
+
+$topnav-background-color: $secondary;
+$topnav-text-color-hover: $primary;
+$topnav-text-color:#fff;
+
 .sidebar {
     border-radius: 0;
     position: fixed;
@@ -11,7 +16,7 @@ $topnav-background-color: #222;
     border: none;
     border-radius: 0;
     overflow-y: auto;
-    background-color: $topnav-background-color;
+    background-color: $secondary;
     bottom: 0;
     overflow-x: hidden;
     padding-bottom: 40px;
@@ -24,7 +29,7 @@ $topnav-background-color: #222;
     // border-top: 1px solid rgba(255,255,255,0.3);
     .list-group {
         a.list-group-item {
-            background: $topnav-background-color;
+            background: $secondary;
             border: 0;
             border-radius: 0;
             color: #999;
@@ -34,11 +39,11 @@ $topnav-background-color: #222;
             }
         }
         a:hover {
-            background: darken($topnav-background-color, 5%);
+            background: darken($secondary, 5%);
             color: #fff;
         }
         a.router-link-active {
-            background: darken($topnav-background-color, 5%);
+            background: darken($secondary, 5%);
             color: #fff;
         }
         .header-fields {
@@ -62,7 +67,7 @@ $topnav-background-color: #222;
                 color: #999;
                 text-decoration: none;
                 font-weight: 400;
-                background: $topnav-background-color;
+                background: $secondary;
                 span {
                     position: relative;
                     display: block;
@@ -78,7 +83,7 @@ $topnav-background-color: #222;
             }
         }
         .panel-title:hover {
-            background: darken($topnav-background-color, 5%);
+            background: darken($secondary, 5%);
         }
         .panel-collapse {
             border-radious: 0;
@@ -86,7 +91,7 @@ $topnav-background-color: #222;
             .panel-body {
                 .list-group-item {
                     border-radius: 0;
-                    background-color: $topnav-background-color;
+                    background-color: $secondary;
                     border: 0 solid transparent;
                     a {
                         color: #999;
@@ -96,7 +101,7 @@ $topnav-background-color: #222;
                     }
                 }
                 .list-group-item:hover {
-                    background: darken($topnav-background-color, 5%);
+                    background: darken($secondary, 5%);
                 }
             }
         }
@@ -166,14 +171,14 @@ $topnav-background-color: #222;
     cursor: pointer;
     padding: 12px;
     bottom: 0;
-    color: #999;
-    background: #212529;
+    color: $topnav-text-color;
+    background: $secondary;
     i {
         font-size: 23px;
     }
     &:hover {
-        background: darken($topnav-background-color, 5%);
-        color: #fff;
+        background: darken($secondary, 5%);
+        color: $topnav-text-color-hover;
     }
     border-top: 1px solid #999;
     -webkit-transition: all 0.2s ease-in-out;

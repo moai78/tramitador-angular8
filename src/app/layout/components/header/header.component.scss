@@ -1,14 +1,18 @@
-$topnav-background-color: #222;
+@import "../../../app.component.scss";
+
+$topnav-background-color: $secondary;
+$topnav-text-color-hover: $primary;
+$topnav-text-color:#fff;
 :host {
     .navbar {
         background-color: $topnav-background-color;
         .navbar-brand {
-            color: #fff;
+            color: $topnav-text-color;
         }
         .nav-item > a {
-            color: #999;
+            color: $topnav-text-color;
             &:hover {
-                color: #fff;
+                color: $topnav-text-color-hover;
             }
         }
     }

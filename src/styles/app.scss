@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+$primary: #d0a821;
+$secondary:#c4262b;
+$info:#c2c2c2;
+
+$btn-primary: white;
+
 @import "bootstrap/bootstrap";
 @import "spinner";
 @import "utils";
